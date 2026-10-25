@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario Actividad 2</title>
+</head>
+<body>
+    <h2>Formulario para Generar Tabla Dinámica</h2>
+    <form action="tabla_2.php" method="POST">
+        <label for="num1">Número mínimo de fila (1 al 10):</label>
+        <input type="number" id="num1" name="num1" min="1" max="10" required><br><br>
+
+        <label for="num2">Número máximo de fila (10 al 20):</label>
+        <input type="number" id="num2" name="num2" min="10" max="20" required><br><br>
+
+        <input type="submit" name="enviar" value="Generar Tabla">
+    </form>
+</body>
+</html>
