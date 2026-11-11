@@ -1,11 +1,15 @@
 <?php
+
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+
 require 'cabecera.php';
 
 $nombre = $_POST['nombre'];
-// Las contraseñas en la BD están en MD5 según los requisitos de la tarea
+
 $clave = md5($_POST['clave']);
 
-// Uso de sprintf tal como solicita el enunciado
+
 $sql = sprintf(
     "SELECT * FROM usuarios WHERE nombre = '%s' AND clave = '%s'",
     mysqli_real_escape_string($conexion, $nombre),

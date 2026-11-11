@@ -1,7 +1,7 @@
 <?php
 $servidor = "localhost";
-$userBD = "root";
-$passwdBD = "root"; // Pon la contraseña de tu base de datos si es distinta
+$userBD = "iaw";
+$passwdBD = "iaw";
 $nomBD = "biblioteca";
 
 $conexion = mysqli_connect($servidor, $userBD, $passwdBD, $nomBD);
